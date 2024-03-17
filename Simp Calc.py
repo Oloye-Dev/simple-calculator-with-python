@@ -10,19 +10,23 @@ while True:
         result = (userInput1) + (userInput2)
         print(str(result))
         break
-    if arith == '-':
+    elif arith == '-':
         result = (userInput1) - (userInput2)
         print(str(result))
         break
-    if arith == '*':
+    elif arith == '*':
         result = (userInput1) * (userInput2)
         print(str(result))
         break
-    if arith == '/':
-        result = (userInput1) / (userInput2)
-        print(str(result))
+    elif arith == '/':
+        if userInput2 == 0:
+            print ('Error: Division by zero is not allowed.')
+        else:
+            result = (userInput1) / (userInput2)
+            print(str(result))
+
         break
-    if arith == '%':
+    elif arith == '%':
         result = (userInput1) % (userInput2)
         print(str(result))
         break
