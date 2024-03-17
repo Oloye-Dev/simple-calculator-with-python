@@ -24,7 +24,6 @@ while True:
         else:
             result = (userInput1) / (userInput2)
             print(str(result))
-
         break
     elif arith == '%':
         result = (userInput1) % (userInput2)
